@@ -16,7 +16,7 @@
 	</natures>
 	<variableList>
 		<variable>
-			<name>aaaa</name>
+			<name>ContextConfig</name>
 			<value>file:/E:/SpringInAction/Knights/src/knights.xml</value>
 		</variable>
 	</variableList>
