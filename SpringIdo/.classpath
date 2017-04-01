@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-webmvc-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-webmvc-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-web-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-web-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-expression-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-expression-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-core-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-core-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-context-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-context-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-beans-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-beans-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/commons-logging-1.2.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/commons-logging-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-aop-3.2.3.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-aop-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/aopalliance-1.0.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/aopalliance-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/spring-asm-3.0.5.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/spring-asm-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/springmvclib/aspectjweaver-1.6.10.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/springmvclib/aspectjweaver-1.6.10.RELEASE-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
