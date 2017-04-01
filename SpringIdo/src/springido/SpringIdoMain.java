@@ -16,5 +16,11 @@ public class SpringIdoMain {
 		stage.ShowStage();
 		
 		//Auditorium auditorium = (Auditorium)ctx.getBean("auditorium");
+		
+		Performer performer2 = (Performer)ctx.getBean("kenny");
+		performer2.perform();
+		
+		Performer performer3 = (Performer)ctx.getBean("kenny2");
+		performer3.perform();
 	}
 }
