@@ -11,7 +11,7 @@
         				   http://www.springframework.org/schema/context
         				   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         				   
-    <context:annotation-config />
+    <context:annotation-config/>
 
 	<bean id="duke" class="springido.Juggler">
 		<constructor-arg value="15" />
@@ -50,6 +50,45 @@
       <bean id="saxophone" class="springido.Saxophone"/> 
     
     <bean id="piano" class="springido.Piano"/>
-     
-      
+    
+    <bean id="audience" class="springido.Audience" />
+    
+    <aop:config>
+    	<aop:aspect ref="audience">
+    	
+			<aop:pointcut expression="execution(* springido.Performer.perform(..))" id="performance"/>
+    	
+    		<aop:before pointcut-ref="performance" method="takeSeats" />
+    		<aop:before pointcut-ref="performance" method="turnOffCellPhones" />
+    		<aop:after-returning pointcut-ref="performance" method="applaud"/>
+    		<aop:after-throwing pointcut-ref="performance" method="demandRefund" />
+			
+    	</aop:aspect>
+    </aop:config>
+    
+    <aop:config>
+    	<aop:aspect ref="audience">
+    		<aop:pointcut expression="execution(* springido.Performer.perform(..))" id="performance2"/>
+    		<aop:around pointcut-ref="performance2" method="watchPerformance" />
+    	</aop:aspect>    	
+    </aop:config>
+    
+    <bean id="magician" class="springido.Magician" />
+    <bean id="volunteer" class="springido.Volunteer" />
+    
+    <aop:config>
+    	<aop:aspect ref="magician">
+    		<aop:pointcut expression="execution(* springido.Thinker.thinkOfSomething(String)) and args(thoughts)" id="thinking"/>    		
+    		<aop:before pointcut-ref="thinking" method="interceptThoughts" arg-names="thoughts" />
+    	</aop:aspect>
+    </aop:config>
+    
+    <aop:config>
+    	<aop:aspect ref="audience">
+    		<aop:declare-parents types-matching="springido.Performer+" 
+			implement-interface="springido.Contestant" 
+			default-impl="springido.GraciousContestant"/> 
+    	</aop:aspect>		   
+    </aop:config>
+
 </beans>
