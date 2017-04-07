@@ -1,4 +1,4 @@
-package spitter.domain;
+package spittr.domain;
 
 public class Spittle {
 
