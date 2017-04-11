@@ -14,4 +14,5 @@ public class HomeControllerTest {
 		
 		mockMvc.perform(MockMvcRequestBuilders.get("/")).andExpect(MockMvcResultMatchers.view().name("home"));
 	}
+	
 }
