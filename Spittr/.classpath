@@ -25,6 +25,6 @@
 	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/commons-lang3-3.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/hibernate-validator.jar"/>
 	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/validation-api-1.1.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/org.springframework.jdbc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/li.liu/Desktop/spring-jdbc-4.1.0.RELEASE.jar" sourcepath="C:/Users/li.liu/Desktop/spring-jdbc-4.1.0.RELEASE-sources.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

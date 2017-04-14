@@ -22,6 +22,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
   }
 
   public List<Spittle> findRecentSpittles() {
+	  //jdbc.query("xxxx", new SpittleRowMapper());
     return jdbc.query(
         "select id, message, created_at, latitude, longitude" +
         " from Spittle" +
@@ -46,7 +47,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
         new SpittleRowMapper(), id);
   }
 
-  public void save(Spittle spittle) {
+  public void save(Spittle spittle){
     jdbc.update(
         "insert into Spittle (message, created_at, latitude, longitude)" +
         " values (?, ?, ?, ?)",
